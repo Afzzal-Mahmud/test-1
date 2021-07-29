@@ -1,0 +1,140 @@
+//all type of primary reset,font,root element and global value are in the global sytle.
+@import "global";
+//I design the hero section on home.scss stylesheet. 
+@import "home";
+@import"sectionLast";
+
+
+//meadia quary
+
+@media screen and(max-width:1024px) {
+  .last{
+    display: none;
+  }
+    .showcase{
+       /* 
+      img{
+            width: 200%;
+            transform: translateX(10%);
+        }
+        */
+        
+        .camera-info{
+                transform: translate(-85%,0%);
+        }
+    }
+    
+    .features__card{
+  
+      .features__card__one,.features__card__two,.features__card__three{
+        width: 35%;
+        margin: 1em;
+    
+        img{
+          width: 85%;
+        }
+      }
+    }
+  
+  
+  }
+
+  //768px
+
+  @media screen and (max-width:768px) {
+
+    .showcase{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+        min-height: 90vh;
+
+        h2{
+            font-size:5rem
+        }
+
+        h3 {
+            padding-bottom: 1.5rem !important;
+            line-height: 1;
+          }
+
+        .camera-info{
+            transform: translate(5%,0%);
+            margin-bottom: 2em;
+    }
+
+        img{
+            width: 70%;
+            margin-bottom: 2.5em
+        } 
+  }
+  .features__container{
+
+      .features__info{
+        padding: 1em;
+
+        .features__card{
+  
+            .features__card__one,.features__card__two,.features__card__three{
+              width: 35%;
+              margin: 1em;
+          
+              img{
+                width: 80%;
+              }
+            }
+          }
+      }
+
+
+  }
+
+  }
+
+
+
+
+  @media screen and (max-width:425px){
+
+      nav{
+          li{
+              display: none;
+              &:last-child{
+                  display: block;
+              }
+          }
+      }
+
+      .showcase{
+        img{
+            width: 100%;
+            margin-bottom: 2.5em
+        } 
+      }
+
+      .features__info{
+        h2{
+          margin-top: 0.5em;
+        }
+      }
+
+      .features__card{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .features__card__one,.features__card__two,.features__card__three{
+            width: 90% !important;
+        
+            img{
+              width: 85%;
+            }
+          }
+  }
+
+}
+
+
+  

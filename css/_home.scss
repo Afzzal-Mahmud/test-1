@@ -1,0 +1,157 @@
+//this design for hero page only
+.nav-container{
+    background: var(--dark);
+}
+nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+
+    .nav-link{
+              display: flex;
+           li{
+            margin: 0.5em 0 0.5em 5em;
+            &:last-child{
+                margin: 0 0 0.5em 5em;
+            }
+            
+            }
+            .order-cta{
+                background: var(--primary);
+                padding: 0.3em .5em;
+                margin-top: .35em;
+                border-radius: 3px;
+            }
+        }
+}
+
+section.hero{
+    background: radial-gradient(#525252,#131313);
+}
+
+.showcase{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    min-height: 90vh;
+
+    h2{
+       grid-column: 2/3;
+       //align-self: flex-end;
+
+   }
+          img{
+           grid-row: 2/3;
+           grid-column: 3/4;
+           //height: 110%;
+           object-fit: cover;
+           align-self: center;
+           justify-self: center;
+    }
+
+   .camera-info{
+        grid-column: 4/5;
+        grid-row:3/4 ;
+        h3 {
+          padding-bottom: 2.5rem;
+          line-height: 1;
+        }
+   }
+}
+
+//second section design start
+
+.features{
+  min-height: 90vh;
+  background: var(--dark);
+
+
+}
+.features__card__one,.features__card__two,.features__card__three{
+  width: 30%;
+  border-radius: 2em;
+  background: #212121;
+  
+  img{
+    object-fit:cover !important ;
+    border-radius: 2em;
+    margin: 2em auto 0 2em;
+    text-align: center;
+    align-self: center;
+  
+    
+  }
+
+}
+.features__container{
+  width: 90%;
+  margin: auto;
+  background: var(--dark);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  .wave{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .features__info{
+    padding: 8.5em;
+    
+    h2{
+      margin-bottom: 1em;
+    }
+    
+     .features__card{
+      display: flex;
+      justify-content: space-between;
+      
+      .card__wrapper{
+        padding: 1.5em 1em 2.5em 2.5em;
+
+        h1{
+          margin-bottom: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+.last{
+    background: var(--dark);
+    min-height: 90vh;
+    .last__container{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        background: var(--dark);
+        z-index: 0;
+        h2{
+            text-align: center;
+        }
+        .wrapper{
+            position: relative;
+            .circle{
+                width: 50em;
+                background:var(--primary);
+                height: 50em;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 25%;
+                z-index: -1;
+    
+                &::after{
+                    content: '';
+                    display: table;
+                    clear: both;
+    
+                }
+            }
+
+            img{
+                position:absolute;
+                top:0;
+                left:27%;
+            }
+
+        }
+    }
+}
